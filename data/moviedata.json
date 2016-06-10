@@ -1,17 +1,38 @@
 [
     {
-        "title": "Fight Club (1999)",
+        "title": "Fight Club",
+        "year": 1999,
         "imdb_id": "tt0137523",
         "youtube_trailer_url": "https://www.youtube.com/watch?v=H8QxAYxNRgs"
     },
     {
-        "title": "Short Term 12 (2013)",
+        "title": "Inception",
+        "year": 2010,
+        "imdb_id": "tt1375666",
+        "youtube_trailer_url": "https://www.youtube.com/watch?v=66TuSJo4dZM"
+    },
+    {
+        "title": "Short Term 12",
+        "year": 2013,
         "imdb_id": "tt2370248",
         "youtube_trailer_url": "https://www.youtube.com/watch?v=H8QxAYxNRgs"
     },
     {
-        "title": "The Martian (2015)",
+        "title": "Frank",
+        "year": 2014,
+        "imdb_id": "tt1605717",
+        "youtube_trailer_url": "https://www.youtube.com/watch?v=-catC4tBVyY"
+    },
+    {
+        "title": "The Martian",
+        "year": 2015,
         "imdb_id": "tt3659388",
         "youtube_trailer_url": "https://www.youtube.com/watch?v=ej3ioOneTy8"
+    },
+    {
+        "title": "Deadpool",
+        "year": 2016,
+        "imdb_id": "tt1431045",
+        "youtube_trailer_url": "https://www.youtube.com/watch?v=ZIM1HydF9UA"
     }
 ]

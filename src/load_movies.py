@@ -12,11 +12,19 @@ DATA_FOLDERPATH = os.path.join(ROOT, 'data')
 DATA_FILEPATH = os.path.join(DATA_FOLDERPATH, 'moviedata.json')
 
 
+def toMovie(movie):
+    return Movie(
+        imdb_id=movie['imdb_id'],
+        title="{title} ({year})".format(title=movie['title'],
+                                        year=movie['year']),
+        yt_url=movie['youtube_trailer_url']
+    )
+
+
 def main():
-    movies_data = json.loads(open(DATA_FILEPATH, 'rt').read())
-    movies = map(lambda m: Movie(imdb_id=m['imdb_id'],
-                                 yt_url=m['youtube_trailer_url']),
-                 movies_data)
+    movies_data = json.loads(open(DATA_FILEPATH, 'rt').read())[0:6]
+    movies = map(toMovie, movies_data)
+    print('End')
     open_movies_page(movies)
 
 if __name__ == '__main__':
