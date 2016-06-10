@@ -36,7 +36,3 @@ class Movie(object):
 
     def __str__(self):
         return "<Movie: {title}>".format(title=self.title)
-
-    @property
-    def imdb_id(self):
-        return self.imdb_id
