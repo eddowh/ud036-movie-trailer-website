@@ -22,9 +22,8 @@ def toMovie(movie):
 
 
 def main():
-    movies_data = json.loads(open(DATA_FILEPATH, 'rt').read())[0:6]
+    movies_data = json.loads(open(DATA_FILEPATH, 'rt').read())
     movies = map(toMovie, movies_data)
-    print('End')
     open_movies_page(movies)
 
 if __name__ == '__main__':
