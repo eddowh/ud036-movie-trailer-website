@@ -2,6 +2,11 @@ import webbrowser
 import os
 import re
 
+
+ROOT = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
+DIST = os.path.join(ROOT, 'dist')
+
+
 # Styles and scripting for the page
 main_page_head = '''
 <head>
@@ -149,7 +154,7 @@ def create_movie_tiles_content(movies):
 
 def open_movies_page(movies):
     # Create or overwrite the output file
-    output_file = open('fresh_tomatoes.html', 'w')
+    output_file = open(os.path.join(DIST, 'fresh_tomatoes.html'), 'w')
 
     # Replace the placeholder for the movie tiles with the actual dynamically
     # generated content
