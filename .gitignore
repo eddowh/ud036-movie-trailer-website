@@ -11,5 +11,5 @@ venv/
 
 # Project specific files #
 ##########################
-# generated HTML
+cache
 dist
